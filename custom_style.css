@@ -10,8 +10,8 @@ html, body{
 }
 
 .top-back{
-    /* background-image: url(https://cdn.wallpapersafari.com/55/31/UJ376L.jpg); */
-    background-image: url(https://i.pinimg.com/originals/65/af/bc/65afbcedcc45273a23fd140fe07923b6.jpg);
+    /* background-image: url(https://i.pinimg.com/originals/65/af/bc/65afbcedcc45273a23fd140fe07923b6.jpg); */
+    background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

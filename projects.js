@@ -3,7 +3,7 @@ function displayProject(title, description, content){
     document.getElementById("project-title").innerHTML = title;
     document.getElementById("project-description").innerHTML = description;
     document.getElementById("this-project").innerHTML = content;
-    window.location.href = '#project-description';
+    window.location.href = '#current-project';
 }
 
 function congress(){

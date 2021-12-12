@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Samantha Anthony Portfolio</title>
-        <link rel="stylesheet" href="./bulma.min.css">
-        <link rel="stylesheet" href="./custom_style.css">
-    </head>
-    <body>
-        <section class="hero is-dark top-back">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Samantha Anthony Portfolio</h1>
-                    <h2 class="subtitle">UNC '23 Statistics and Computer Science</h2>
-                </div>
-            </div>
-        </section>
 
-        <!-- <nav class="navbar is-transparent is-info">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://samantho.github.io/">
+<head>
+    <title>Samantha Anthony Portfolio</title>
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./custom_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="projects.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <section class="hero is-dark top-back">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Samantha Anthony Portfolio</h1>
+                <h2 class="subtitle">UNC '23 | Statistics and Computer Science</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVBAR -->
+    <nav class="navbar is-info has-shaddow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
                 Home
-              </a>
-              <a class="navbar-item" href="">
-                About Me
-              </a>
-            </div>
-          </nav> -->
+            </a>
+            <a class="navbar-item" href="#projects">
+                Projects
+            </a>
+            <a class="navbar-item" href="#about">
+                About
+            </a>
+            <a class="navbar-item" href="#contact">
+                Contact
+            </a>
+        </div>
+    </nav>
 
-        <section class="section">
-            <div class="container">
-                <div class="content">
-                    <h1 class="title has-text-info has-text-centered">About Me</h1>
-                    <div class="has-text-left">
-                        <!-- <h1 class="title has-text-weight-normal">Consistency is Key</h1> -->
-                        <h5 class="subtitle has-text-grey has-text-weight-normal">Elements on a web page should be related and follow the same theme</h5>
-                        <p>
-                        Remember that everything on a web page has a relationship with the other content.
-                    </p>
-                    </div>
-                </div>
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="content has-text-centered">
+                <h1 class="title has-text-info">Projects</h1>
+                <h6></h6>
+                <h6 class="subtitle has-text-grey is-italic">This is a collection of multidisciplinary projects created
+                    in Python, R, Java, Google Earth, Javascript, CSS, HTML, and others.</h6>
             </div>
-        </section>
-        
-        <section class="section">
-            <div class="container">
-                <div class="content has-text-centered">
-                    <h1 class="title has-text-info">Projects</h1>
-                    <h6></h6>
-                    <h6 class="subtitle has-text-grey is-italic">This is a collection of multidisciplinary projects created in Python, R, Java, Google Earth, Javascript, CSS, HTML, and others.</h6>
-                </div>
-                <div class="tabs is-medium is-centered">
-                    <ul>
-                        <li class="is-active"><a>All</a></li>
-                        <li><a>Data Science</a></li>
-                        <li><a>Web Dev</a></li>
-                        <li><a>Geospatial</a></li>
-                        <li><a>Other</a></li>
-                    </ul>
-                </div>
-                <div class="columns is-multiline justify-center">
-                    <!-- 
+            <div class="tabs is-medium is-centered">
+                <ul>
+                    <li class="is-active"><a>All</a></li>
+                    <li><a>Data Science</a></li>
+                    <li><a>Web Dev</a></li>
+                    <li><a>Geospatial</a></li>
+                    <li><a>Other</a></li>
+                </ul>
+            </div>
+            <div class="columns is-multiline justify-center">
+                <!-- 
                         These are the projects:
                         - US Congress Social Media - socialmedia.png
                         - Atlanta Map  - atlanta.png, hover atlanta.gif
@@ -69,65 +69,121 @@
                         - Conway's Game of Life - conway.png, hover conway.gif
                         - Othello - othello.png, hover othello.gif
                     -->
-                    <div class="column">
-                        <div class="project">
-                            <img src="images/socialmedia.png" alt="US Congress Social Media">
-                            <p class="subtitle is-6">Congress Social Media Analysis | R</p>
-                        </div>
+                <div class="column">
+                    <div class="project" onclick="congress()">
+                        <img src="images/socialmedia.png" alt="US Congress Social Media">
+                        <p class="subtitle is-6">Congress Social Media Analysis | R</p>
                     </div>
-                    <div class="column">
-                        <div class="project">
-                            <img src="images/atlanta.png" alt="Atlanta Suburbanization">
-                            <p class="subtitle is-6">Urban Sprawl in Atlanta | GEE</p>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="project" onclick="atlanta()">
+                        <img src="images/atlanta.png" alt="Atlanta Suburbanization">
+                        <p class="subtitle is-6">Urban Sprawl in Atlanta | GEE</p>
                     </div>
-                    <div class="column">
-                        <div class="project">
-                            <!-- https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783__480.jpg -->
-                            <img src="images/book.png" alt="Book Recommender">
-                            <p class="subtitle is-6">Book Recommender | Python</p>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="project" onclick="book()">
+                        <!-- https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783__480.jpg -->
+                        <img src="images/book.png" alt="Book Recommender">
+                        <p class="subtitle is-6">Book Recommender | Python</p>
                     </div>
-                    <div class="column">
-                        <div class="project">
-                            <img src="images/friend.png" alt="Friend Network Chart">
-                            <p class="subtitle is-6">Friend Network Chart | JS</p>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="project" onclick="friend()">
+                        <img src="images/friend.png" alt="Friend Network Chart">
+                        <p class="subtitle is-6">Friend Network Chart | JS</p>
                     </div>
-                    <div class="column">
-                        <div class="project">
-                            <!-- https://cdn.cnn.com/cnnnext/dam/assets/200401105309-20200401-indian-gate-air-pollution-split-super-169.jpg -->
-                            <img src="images/covid.jpg" alt="COVID-19 Pollution">
-                            <p class="subtitle is-6">COVID-19 Pollution Analysis | R</p>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="project" onclick="covid()">
+                        <!-- https://cdn.cnn.com/cnnnext/dam/assets/200401105309-20200401-indian-gate-air-pollution-split-super-169.jpg -->
+                        <img src="images/covid.jpg" alt="COVID-19 Pollution">
+                        <p class="subtitle is-6">COVID-19 Pollution Analysis | R</p>
                     </div>
-                    <div class="column">
-                        <div class="project">
-                            <!-- https://image.freepik.com/free-vector/illustration-graphs_53876-28520.jpg -->
-                            <img src="images/prob.png" alt="Proability Functions for Statistics">
-                            <p class="subtitle is-6">Probability Functions | Python</p>
-                        </div>
-                    </div> 
-                    <!-- <div class="column">
+                </div>
+                <div class="column">
+                    <div class="project" onclick="prob()">
+                        <!-- https://image.freepik.com/free-vector/illustration-graphs_53876-28520.jpg -->
+                        <img src="images/prob.png" alt="Proability Functions for Statistics">
+                        <p class="subtitle is-6">Probability Functions | Python</p>
+                    </div>
+                </div>
+                <!-- <div class="column">
                         <div class="project">
                             http://pi.math.cornell.edu/~lipa/mec/4life2.png"
                             <img src="images/conway.png" alt="Conway's Game of Life">
                             <p class="subtitle is-6">Conway's Game of Life | Java</p>
                         </div>
                     </div> -->
-                    <!-- <div class="column">
+                <!-- <div class="column">
                         <div class="project">
                             <img src="images/othello.png" alt="Othello">
                             <p class="subtitle is-6">Othello Game | Java</p>
                         </div>
                     </div>                    -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="section about-me" id="about">
+        <div class="container">
+            <div class="content">
+                <h1 class="title has-text-info has-text-centered">About Me</h1>
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-vertical is-parent">
+                        <div class="about-me tile is-child notification">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded profile-pic" src="images/profile.png">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="tile is-parent profile-info">
+                        <div class="about-me tile is-child notification">
+                            <p>
+                                I am a developer and data scientist with experience in programing and data cleansing,
+                                analysis, and modeling. Additionally, I have developed and co-developed many supervised
+                                and unsupervised machine learning models for varying use cases. Currently, I am a
+                                research assistant at the Data-Driven EnviroLab at UNC doing environmental data science
+                                research.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- CURRENT PROJECT -->
+    <section class="section" id="current-project">
+        <div class="container">
+            <div class="content has-text-centered">
+                <h1 id="project-title" class="title has-text-info">Current Project</h1>
+                <h6></h6>
+                <h6 id="project-description" class="subtitle has-text-grey is-italic">Description</h6>
+                <hr>
+                <div id="this-project"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+              <p class="buttons is-grouped columns socials">
+                <button class="column button is-link is-medium is-fullwidth" onclick="location.href='https://github.com/samantho'" title="@samantho">
+                  <span>GitHub</span>
+                </button>
+                <button class="column button is-info is-medium is-fullwidth" onclick="location.href='https://www.linkedin.com/in/samantha-anthony22/'" title="@samantha-anthony22">
+                  <span>LinkedIn</span>
+                </button>
+                <button class="column button is-primary is-medium is-fullwidth" onclick="location.href='mailto:samanthahanthony@gmail.com'" title="samanthahanthony@gmail.com">
+                    <span>Email</span>
+                </button>
+              </p>
+        </div>
+    </section>
 
+</body>
 
-        <!-- <button class="button is-large is-success is-rounded is-focused has-text-weight-bold">Click Here</button> -->
-    </body>
 </html>

@@ -4,6 +4,16 @@ html, body{
     background-color: #fafafa;
 }
 
+.about-me{
+    /* background-color: #fafafa; */
+    background-color: #eef6fc;
+}
+
+.projects-section{
+    /* background-color: #eef6fc; */
+    background-color: #fafafa;
+}
+
 .justify-center .column{
     display: flex !important;
     justify-content: center !important;
@@ -17,7 +27,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 175px;
+    /* height: 175px; */
 }
 
 .project {
@@ -28,6 +38,7 @@ html, body{
     min-width: 300px;
     /*margin: .3em;*/
     /* background-color:aliceblue; */
+    background-color: #fafafa;
 }
 
 .project p{
@@ -38,6 +49,7 @@ html, body{
     vertical-align: middle;
     text-align: center;
 }
+
 .column img {
     height: 250px !important;
     width: 300px !important;
@@ -47,3 +59,18 @@ html, body{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: scale(1.05);
 }
+
+/* Current Project Info */
+
+#current-project{
+    display: none;
+}
+
+#project-title{
+
+}
+
+#project-description{
+
+}
+

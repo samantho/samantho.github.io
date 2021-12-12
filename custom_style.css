@@ -12,8 +12,12 @@ html, body{
 .top-back{
     /* background-image: url(https://i.pinimg.com/originals/65/af/bc/65afbcedcc45273a23fd140fe07923b6.jpg); */
     background-image: url('./images/background.jpg');
+    /* background-image: url(https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2018/05/grf-bg.jpg); */
+    
     background-repeat: no-repeat;
     background-size: cover;
+
+    height: 175px;
 }
 
 .project {

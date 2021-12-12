@@ -1,0 +1,45 @@
+html, body{
+    height: 100%;
+    font-size: 1.1em;
+    background-color: #fafafa;
+}
+
+.justify-center .column{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.top-back{
+    /* background-image: url(https://cdn.wallpapersafari.com/55/31/UJ376L.jpg); */
+    background-image: url(https://i.pinimg.com/originals/65/af/bc/65afbcedcc45273a23fd140fe07923b6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project {
+    height: 300px !important;
+    width: 300px !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    min-width: 300px;
+    /*margin: .3em;*/
+    /* background-color:aliceblue; */
+}
+
+.project p{
+    height: 100px !important;
+    width: 300px !important;
+    line-height: 35px;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.column img {
+    height: 250px !important;
+    width: 300px !important;
+}
+
+.project:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.05);
+}

@@ -84,7 +84,7 @@
     function atlanta(){
         var title = "Atlanta Urban Sprawl, a Geo-Analysis";
         var description = "This research analyzes and visualizes the suburbanization of Atlanta from 1975 to 2014 by using GHSL data to determine artificial surfaces.";
-        var content = "<iframe src='./projects/atlanta.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/atlanta.html' style='width:100%; height:90vh;'></iframe>";
         displayProject(title, description, content);
     };
 
@@ -100,7 +100,7 @@
     function friend(){
         var title = "Friend Network Chart";
         var description = "This project is a fun visualization of my roommate's (Diana) and my friends to show the interconnectivity of different types of people at UNC.";
-        var content = "<iframe src='./projects/friend.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/friend.html' style='width:100%;height:30vh;'></iframe>";
         displayProject(title, description, content);
     };
 
@@ -114,29 +114,28 @@
     function prob(){
         var title = "Statistics Probability Library";
         var description = "This is a Python library based on the content in a probability for data science couse. Contents include basic and conditional probability, and many types of random variables.";
-        // var content = "<p>The contents of this project can be found in the GitHub repository <a href='https://github.com/samantho/storProbDS'>here</a>.</p>";
-        var content = "<iframe src='./projects/prob.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/prob.html' style='width:100%;height:46vh;'></iframe>";
         displayProject(title, description, content);
     };
 
     function conway(){
         var title = "Conway's Game of Life";
         var description = "This is a Java project with an interactive GUI to play Conway's Game of Life, an automation developed by mathematician John Conway in 1970. You can manipulate the size, speed, conditions, formations, etc of the visualization.";
-        var content = "<iframe src='./projects/conway.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/conway.html' style='width:100%; height:90vh;'></iframe>";
         displayProject(title, description, content);
     }
 
     function othello(){
         var title = "Othello Game";
         var description = "This is a two-player strategy game written in Java. The objective is to get the majority of your color disks on the board at the end of the game.";
-        var content = "<iframe src='./projects/othello.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/othello.html' style='width:100%; height:90vh;'></iframe>";
         displayProject(title, description, content);
     }
 
     function thisSite(){
         var title = "Samantha Anthony Portfolio";
         var description = "This website is a collection of a few personal and school projects written in many different languages. For more information, connect with me using the Contact section at the bottom of the page or by emailing samanthahanthony@gmail.com";
-        var content = "<iframe src='./projects/portfolio.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/portfolio.html' style='width:100%;height:35vh;'></iframe>";
         displayProject(title, description, content);
     }
 }

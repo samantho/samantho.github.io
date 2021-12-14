@@ -50,11 +50,11 @@
             </div>
             <div class="tabs is-medium is-centered">
                 <ul>
-                    <li class="is-active"><a>All</a></li>
-                    <li><a>Data Science</a></li>
-                    <li><a>Web Dev</a></li>
-                    <li><a>Geospatial</a></li>
-                    <li><a>Other</a></li>
+                    <li onclick="showAll()" class="is-active" id="all"><a>All</a></li>
+                    <li onclick="dataScience()" id="datascience"><a>Data Science</a></li>
+                    <li onclick="webDev()" id="webdev"><a>Web Dev</a></li>
+                    <li onclick="geospatial()" id="geospatial"><a>Geospatial</a></li>
+                    <li onclick="other()" id="other"><a>Other</a></li>
                 </ul>
             </div>
             <div class="columns is-multiline justify-center">
@@ -68,59 +68,74 @@
                         - Probability Functions - prob.png
                         - Conway's Game of Life - conway.png, hover conway.gif
                         - Othello - othello.png, hover othello.gif
+
+                        The different categories are:
+                        - Data Science - cat-ds
+                        - Web Dev - cat-wd
+                        - Geospatial - cat-g
+                        - Other - cat-or
                     -->
-                <div class="column">
+                <div class="column cat-ds proj-col">
                     <div class="project" onclick="congress()">
                         <img src="images/socialmedia.png" alt="US Congress Social Media">
                         <p class="subtitle is-6">Congress Social Media Analysis | R</p>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column cat-g proj-col">
                     <div class="project" onclick="atlanta()">
                         <img src="images/atlanta.png" alt="Atlanta Suburbanization">
                         <p class="subtitle is-6">Urban Sprawl in Atlanta | GEE</p>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column cat-ds proj-col">
                     <div class="project" onclick="book()">
                         <!-- https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783__480.jpg -->
                         <img src="images/book.png" alt="Book Recommender">
                         <p class="subtitle is-6">Book Recommender | Python</p>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column cat-wd proj-col">
                     <div class="project" onclick="friend()">
                         <img src="images/friend.png" alt="Friend Network Chart">
                         <p class="subtitle is-6">Friend Network Chart | JS</p>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column cat-ds proj-col">
                     <div class="project" onclick="covid()">
                         <!-- https://cdn.cnn.com/cnnnext/dam/assets/200401105309-20200401-indian-gate-air-pollution-split-super-169.jpg -->
                         <img src="images/covid.jpg" alt="COVID-19 Pollution">
                         <p class="subtitle is-6">COVID-19 Pollution Analysis | R</p>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column cat-or proj-col">
                     <div class="project" onclick="prob()">
                         <!-- https://image.freepik.com/free-vector/illustration-graphs_53876-28520.jpg -->
                         <img src="images/prob.png" alt="Proability Functions for Statistics">
                         <p class="subtitle is-6">Probability Functions | Python</p>
                     </div>
                 </div>
-                <!-- <div class="column">
-                        <div class="project">
-                            http://pi.math.cornell.edu/~lipa/mec/4life2.png"
-                            <img src="images/conway.png" alt="Conway's Game of Life">
-                            <p class="subtitle is-6">Conway's Game of Life | Java</p>
-                        </div>
-                    </div> -->
-                <!-- <div class="column">
-                        <div class="project">
-                            <img src="images/othello.png" alt="Othello">
-                            <p class="subtitle is-6">Othello Game | Java</p>
-                        </div>
-                    </div>                    -->
+                <div class="column cat-or proj-col">
+                    <div class="project" onclick="conway()">
+                        <!-- https://game-icons.net/1x1/delapouite/coins.html -->
+                        <img src="images/conway.png" alt="Conway's Game of Life">
+                        <p class="subtitle is-6">Conway's Game of Life | Java</p>
+                    </div>
+                </div>
+                <div class="column cat-or proj-col">
+                    <div class="project" onclick="othello()">
+                        <!-- https://free-icon-rainbow.com/othello-board-game-free-icon-5/ -->
+                        <img src="images/othello.png" alt="Othello">
+                        <p class="subtitle is-6">Othello Game | Java</p>
+                    </div>
+                </div>                   
+                <div class="column cat-wd proj-col">
+                    <div class="project" onclick="thisSite()">
+                        <!-- https://p.kindpng.com/picc/s/348-3487515_coding-computer-vector-free-hd-png-download.png -->
+                        <img src="images/website.png" alt="Samantha Anthony Portfolio Webiste">
+                        <p class="subtitle is-6">This Portfolio Website | JS</p>
+                    </div>
+                </div>                   
+                
             </div>
         </div>
     </section>

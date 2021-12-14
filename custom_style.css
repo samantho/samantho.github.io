@@ -15,7 +15,8 @@ html, body{
 }
 
 .justify-center .column{
-    display: flex !important;
+    /* display: flex !important; */
+    display: flex;
     justify-content: center !important;
 }
 
@@ -73,4 +74,3 @@ html, body{
 #project-description{
 
 }
-

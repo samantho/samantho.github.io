@@ -136,7 +136,7 @@
     function thisSite(){
         var title = "Samantha Anthony Portfolio";
         var description = "This website is a collection of a few personal and school projects written in many different languages. For more information, connect with me using the Contact section at the bottom of the page or by emailing samanthahanthony@gmail.com";
-        var content = "<iframe src='projects/portfolio.html' style='width:100%;height:100%;'></iframe>";
+        var content = "<iframe src='./projects/portfolio.html' style='width:100%;height:100%;'></iframe>";
         displayProject(title, description, content);
     }
 }

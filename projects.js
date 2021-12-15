@@ -100,7 +100,7 @@
     function friend(){
         var title = "Friend Network Chart";
         var description = "This project is a fun visualization of my roommate's (Diana) and my friends to show the interconnectivity of different types of people at UNC.";
-        var content = "<iframe src='./projects/friend.html' style='width:100%;height:30vh;'></iframe>";
+        var content = "<iframe src='./projects/friend.html' style='width:100%;height:50vh;'></iframe>";
         displayProject(title, description, content);
     };
 
@@ -114,7 +114,7 @@
     function prob(){
         var title = "Statistics Probability Library";
         var description = "This is a Python library based on the content in a probability for data science couse. Contents include basic and conditional probability, and many types of random variables.";
-        var content = "<iframe src='./projects/prob.html' style='width:100%;height:46vh;'></iframe>";
+        var content = "<iframe src='./projects/prob.html' style='width:100%;height:74vh;'></iframe>";
         displayProject(title, description, content);
     };
 
@@ -132,10 +132,17 @@
         displayProject(title, description, content);
     }
 
+    function alu(){
+        var title = "Simple ALU Circuit";
+        var description = "This is a physical electronics circuit using adder and register chips to implement a simple ALU. On every clock tick, the circuit will take the register value, add or subtract the specified amount, and store the results back into the register.";
+        var content = "<iframe src='./projects/alu.html' style='width:100%; height:90vh;'></iframe>";
+        displayProject(title, description, content);
+    }
+
     function thisSite(){
         var title = "Samantha Anthony Portfolio";
         var description = "This website is a collection of a few personal and school projects written in many different languages. For more information, connect with me using the Contact section at the bottom of the page or by emailing samanthahanthony@gmail.com";
-        var content = "<iframe src='./projects/portfolio.html' style='width:100%;height:35vh;'></iframe>";
+        var content = "<iframe src='./projects/portfolio.html' style='width:100%;height:50vh;'></iframe>";
         displayProject(title, description, content);
     }
 }

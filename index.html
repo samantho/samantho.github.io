@@ -39,15 +39,35 @@
         </div>
     </nav>
 
+    <!-- HIDDEN MODAL CONTENT -->
+    <section>
+        <div id="modal-project-popup" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                <p class="modal-card-title" id="project-title">Project Title</p>
+                <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body" id="modal-card-body">
+                    <div id="this-project" class="is-size-7">
+                        <iframe>Hi</iframe>
+                    </div>
+                </section>
+                <footer class="modal-card-foot is-small" id="modal-footer">Sam Anthony</footer>
+            </div>
+        </div>
+    </section>
+
     <!-- PROJECTS -->
     <section class="section projects-section" id="projects">
         <div class="container">
-            <div class="content has-text-centered">
+            <div class=tent has-text-centered">
                 <h1 class="title has-text-info">Projects</h1>
                 <h6></h6>
                 <h6 class="subtitle has-text-grey is-italic">This is a collection of multidisciplinary projects created
                     in Python, R, Java, Google Earth, Javascript, CSS, HTML, and others.</h6>
             </div>
+            <br>
             <div class="tabs is-medium is-centered">
                 <ul>
                     <li onclick="showAll()" class="is-active" id="all"><a>All</a></li>
@@ -60,6 +80,7 @@
             <div class="columns is-multiline justify-center">
                 <!-- 
                         These are the projects:
+                        - Predict Marijuana User w/ ML - drug.png
                         - US Congress Social Media - socialmedia.png
                         - Atlanta Map  - atlanta.png
                         - Book Recommendation - book.png
@@ -78,13 +99,25 @@
                         - Other - cat-or
                     -->
                 <div class="column cat-ds proj-col">
-                    <div class="project" onclick="congress()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="drug()">
+                        <img src="images/drug.png" alt="Drug Consumption vs Marijuana">
+                        <p class="subtitle is-6">Predict Marijuana User w/ ML | Python</p>
+                    </div>
+                </div>
+                <div class="column cat-ds proj-col">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="art()">
+                        <img src="images/artstyler.png" alt="Image Art Styler">
+                        <p class="subtitle is-6">Neural Stylization Network | Python</p>
+                    </div>
+                </div>
+                <div class="column cat-ds proj-col">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="congress()">
                         <img src="images/socialmedia.png" alt="US Congress Social Media">
                         <p class="subtitle is-6">Congress Social Media Analysis | R</p>
                     </div>
                 </div>
                 <div class="column cat-g proj-col">
-                    <div class="project" onclick="atlanta()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="atlanta()">
                         <img src="images/atlanta.png" alt="Atlanta Suburbanization">
                         <p class="subtitle is-6">Urban Sprawl in Atlanta | GEE</p>
                     </div>
@@ -96,51 +129,49 @@
                         <p class="subtitle is-6">Book Recommender | Python</p>
                     </div>
                 </div> -->
-                <div class="column cat-wd proj-col">
-                    <div class="project" onclick="friend()">
-                        <img src="images/friend.png" alt="Friend Network Chart">
-                        <p class="subtitle is-6">Friend Network Chart | JS</p>
-                    </div>
-                </div>
                 <div class="column cat-ds proj-col">
-                    <div class="project" onclick="covid()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="covid()">
                         <!-- https://cdn.cnn.com/cnnnext/dam/assets/200401105309-20200401-indian-gate-air-pollution-split-super-169.jpg -->
                         <img src="images/covid.jpg" alt="COVID-19 Pollution">
                         <p class="subtitle is-6">COVID-19 Pollution Analysis | R</p>
                     </div>
                 </div>
                 <div class="column cat-or proj-col">
-                    <div class="project" onclick="conway()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="conway()">
                         <!-- https://game-icons.net/1x1/delapouite/coins.html -->
                         <img src="images/conway.png" alt="Conway's Game of Life">
                         <p class="subtitle is-6">Conway's Game of Life | Java</p>
                     </div>
                 </div>
-                <div class="column cat-or proj-col">
-                    <div class="project" onclick="alu()">
-                        <!-- https://cdn1.vectorstock.com/i/1000x1000/74/25/figure-electrical-circuits-icon-vector-13547425.jpg -->
+                <!-- <div class="column cat-or proj-col">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="alu()">
+                        https://cdn1.vectorstock.com/i/1000x1000/74/25/figure-electrical-circuits-icon-vector-13547425.jpg
                         <img src="images/ALU.png" alt="ALU Circuit">
                         <p class="subtitle is-6">ALU Circuit | Electronics</p>
                     </div>
+                </div> -->
+                <div class="column cat-wd proj-col">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="friend()">
+                        <img src="images/friend.png" alt="Friend Network Chart">
+                        <p class="subtitle is-6">Friend Network Chart | JS</p>
+                    </div>
                 </div>
                 <div class="column cat-or proj-col">
-                    <div class="project" onclick="othello()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="othello()">
                         <!-- https://free-icon-rainbow.com/othello-board-game-free-icon-5/ -->
                         <img src="images/othello.png" alt="Othello">
                         <p class="subtitle is-6">Othello Game | Java</p>
                     </div>
                 </div>
-                <div class="column cat-or proj-col">
-                    <div class="project" onclick="prob()">
-                        <!-- https://image.freepik.com/free-vector/illustration-graphs_53876-28520.jpg -->
+                <!-- <div class="column cat-or proj-col">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="prob()">
+                         https://image.freepik.com/free-vector/illustration-graphs_53876-28520.jpg 
                         <img src="images/prob.png" alt="Proability Functions for Statistics">
                         <p class="subtitle is-6">Probability Functions | Python</p>
                     </div>
-                </div>  
-                
-                
+                </div> -->  
                 <div class="column cat-wd proj-col">
-                    <div class="project" onclick="thisSite()">
+                    <div class="project js-modal-trigger" data-target="modal-project-popup" onclick="thisSite()">
                         <!-- https://p.kindpng.com/picc/s/348-3487515_coding-computer-vector-free-hd-png-download.png -->
                         <img src="images/website.png" alt="Samantha Anthony Portfolio Webiste">
                         <p class="subtitle is-6">This Portfolio Website | JS</p>
@@ -152,6 +183,7 @@
     </section>
 
     <!-- CURRENT PROJECT -->
+    <!--
     <section class="section" id="current-project">
         <div class="container">
             <div class="content">
@@ -162,7 +194,7 @@
                 <div id="this-project" class="current-proj box"></div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- ABOUT ME -->
     <section class="section about-me" id="about">
@@ -180,11 +212,9 @@
                     <div class="tile is-parent profile-info">
                         <div class="about-me tile is-child notification">
                             <p>
-                                I am a developer and data scientist with experience in programing, circuitry, and data cleansing,
-                                analysis, and modeling. Additionally, I have developed and co-developed many supervised
-                                and unsupervised machine learning models for varying use cases. Currently, I am a
-                                research assistant at the Data-Driven EnviroLab at UNC doing environmental data science
-                                research.
+                                I am a developer and machine learning engineer with expertise in Natural Language Processing, Deep Learning, and basic Machine Learning.
+                                I am also experienced in programing, circuitry, and data cleansing, analysis, and modeling. 
+                                I have developed and co-developed many supervised and unsupervised machine learning models for varying use cases in professional and personal contexts. 
                             </p>
                         </div>
                     </div>
@@ -209,7 +239,7 @@
               </p>
         </div>
     </section>
-
+    
 </body>
 
 </html>
